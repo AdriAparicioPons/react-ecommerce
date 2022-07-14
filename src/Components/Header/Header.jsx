@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
     
-    <div>
+    <div className="wrapper">
       
     <ul className="nav justify-content-between">
   <li className="nav-item">

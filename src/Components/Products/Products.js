@@ -16,7 +16,9 @@ const products = [{
     description: "THE MOUNTAIN BIKE, DISTILLED",
     price: 88,
     img: bike1,
-    active: "active"
+    active: "active",
+    quantity: 0
+    
   },
   {
     id: 2,
@@ -24,7 +26,9 @@ const products = [{
     description: "Wide open, dawn to dusk.",
     price: 109,
     img: bike2,
-    active: ""
+    active: "",
+    quantity: 0
+
   },
   {
     id: 3,
@@ -32,7 +36,8 @@ const products = [{
     description: "The downhiller's XC bike.",
     price: 66,
     img: bike3,
-    active: ""
+    active: "",
+    quantity:0
   },
   {
     id: 4,
@@ -40,7 +45,8 @@ const products = [{
     description: "On and on and on and on...",
     price: 66,
     img: bike4,
-    active: ""
+    active: "",
+    quantity:0
   },
   {
     id: 5,
@@ -56,7 +62,8 @@ const products = [{
     description: "More travel than a white van.",
     price: 66,
     img: bike6,
-    active: ""
+    active: "",
+    quantity:0
   },
   {
     id: 7,
@@ -64,7 +71,8 @@ const products = [{
     description: "If in doubt, take a Bronson out.",
     price: 66,
     img: bike7,
-    active: ""
+    active: "",
+    quantity:0
   },
   {
     id: 8,
@@ -72,7 +80,8 @@ const products = [{
     description: "A downhill bike that goes everywhere.",
     price: 66,
     img: bike8,
-    active: ""
+    active: "",
+    quantity:0
   },
   {
     id: 9,
@@ -80,7 +89,8 @@ const products = [{
     description: "A fair advantage.",
     price: 66,
     img: bike9,
-    active: ""
+    active: "",
+    quantity:0
   },
   {
     id: 10,
@@ -88,7 +98,8 @@ const products = [{
     description: "Opportunistic scavenger of man-made terrain.",
     price: 66,
     img: bike10,
-    active: ""
+    active: "",
+    quantity:0
   },
   {
     id: 11,
@@ -96,7 +107,8 @@ const products = [{
     description: "Puzzling Ain’t Easy.",
     price: 66,
     img: bike11,
-    active: ""
+    active: "",
+    quantity:0
   }
 ];
 
