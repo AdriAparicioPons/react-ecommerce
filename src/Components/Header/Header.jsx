@@ -6,12 +6,17 @@ import {useState} from 'react'
 
 
 
-const Header = () => {
- 
-  const logoutHandler = e =>{
-    e.preventDefault();
-    // Logout();
+const Header = (props) => {
+
+  const {cart, user, setUser} = {...props}
+
+  const logout = () => {
+    setUser({name:'', email: '', password: ''})
   }
+  // const logout = () => {
+  //   setUser(prevUser => console.log(prevUser))
+  // }
+
   return (
     <>
     
@@ -22,15 +27,19 @@ const Header = () => {
      <img className= "logotype"src={logo}/>
   </li>
   <li className="nav-item">
-    <a className="nav-link" href="#">Home</a>
+    <a className="nav-link" href="#">Bikes</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="#">Riders</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="#">Shops</a>
   </li>
   <li className="nav-item">
     <CardModal/>
   </li>
   <li className="nav-item">
-    <form onSubmit={logoutHandler}>
-    <button className="nav-link" type='submit' >Log out</button>
-    </form>
+    <button className="nav-link btn btn-dark " onClick={logout}>Log out</button>
   </li>
 </ul>
 

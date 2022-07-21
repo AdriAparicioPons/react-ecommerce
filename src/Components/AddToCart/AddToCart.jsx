@@ -6,7 +6,7 @@ function AddToCart({cart, cartAdd, prod}) {
 
   const addItemToLocalStorage = () => {
     console.log(cart)
-      cart.find((element) => element.id === prod.id) ? prod.quantity += 1 : cartAdd(...cart, prod);
+      cart.find((element) => element.id === prod.id) ? prod.quantity += 1 : cartAdd(prevState => [...prevState, prod])
       
     console.log("hell ",cart)  
     }

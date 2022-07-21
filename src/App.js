@@ -2,6 +2,8 @@ import  Body from "./Components/Body/Body"
 import Header from "./Components/Header/Header"
 import LoginForm from "./Components/LoginForm/LoginForm"
 import {useEffect, useState} from "react"
+import Footer from "./Components/Footer/Footer"
+// import RouterPath from "./Router/RouterPath"
 
 
 
@@ -12,7 +14,7 @@ const App =() => {
 
 
 useEffect(()=>{
-  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem("cart", [JSON.stringify(cart)]);
 },[cart])
 
 const adminUser = {
@@ -38,17 +40,18 @@ const Login = details => {
   </div>)
   }
 }
- const Logout = () => {
-  setUser({name: "", email:""});
-}
+//  const Logout = () => {
+//   setUser({name: "", email:""});
+// }
 
   return (
    
     <div className="App">
       {(user.email !="") ?(
         <div>
-      <Header cart={cart} Logout={Logout}/>      
+      <Header cart={cart} user={user} setUser={setUser}/>      
       <Body  cart={cart} cartAdd={cartAdd}/>
+      <Footer/>
       </div>
       ):(
         <LoginForm Login={Login} error={error}/>

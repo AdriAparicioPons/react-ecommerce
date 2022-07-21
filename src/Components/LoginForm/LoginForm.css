@@ -1,3 +1,15 @@
 .login-dark {
-    background: linear-gradient(145deg, #575b5d, #252b2d);
+    /* background: linear-gradient(145deg, #575b5d, #252b2d); */
+    background-image: url("../../img/Danny-MacAskill.jpg");
+
+}
+.title{
+    font-family: 'Teko', sans-serif;
+}
+.container{
+        background: linear-gradient(145deg, #575b5d, #252b2d); 
+
+}
+.error{
+    width: 30%
 }
