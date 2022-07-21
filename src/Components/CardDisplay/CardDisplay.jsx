@@ -1,23 +1,31 @@
-import React from 'react'
+import React from "react";
 
-function CardDisplay({id, title, description, price, img,active}) {
+function CardDisplay() {
+  
+  const itemsInCart = JSON.parse(localStorage.getItem("cart")) || [];
   return (
     <>
-    <div className="modal-body">
-    <div className="card" style={{width: '18rem'}}>
-  <img src={img} className="card-img-top" alt={title}/>
-  <div className="card-body">
-    <h5 className="card-title">{title}</h5>
-    <p className="card-text">{description}</p>
-    <p className="card-text">{price} €</p>
+      {itemsInCart.map((item) => {
+        return (
 
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-    
-  </div>
-</div>
-</div>
+          <div key={item.id} className="modal-body">
+            <div className="card" style={{ width: "18rem" }}>
+              <img src={item.img} className="card-img-top" alt={item.title} />
+              <div className="card-body">
+                <h5 className="card-title">{item.title}</h5>
+                <p className="card-text">{item.description}</p>
+                <p className="card-text">{item.price} €</p>
+
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </>
-  )
+  );
 }
 
-export default CardDisplay
+export default CardDisplay;

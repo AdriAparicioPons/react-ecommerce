@@ -14,6 +14,7 @@ const CarouselCard = ({ cartAdd, cart }) => {
           <div className="carousel-caption  rounded bg-transparent">
             <h5>{prod.title}</h5>
             <p>{prod.description}</p>
+            <p>{prod.quantity}</p>
             <p>{prod.price} €</p>
             <AddToCart cartAdd={cartAdd} cart={cart} prod={prod} />
           </div>

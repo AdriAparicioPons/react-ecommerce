@@ -1,22 +1,24 @@
 import React from 'react'
 import logo from '../../img/logo.webp';
 import './Footer.css';
-
+import {GrFacebook} from "react-icons/gr"
+import {IoLogoYoutube, IoLogoTwitter} from "react-icons/io"
+import {BsInstagram } from "react-icons/bs"
+import {FaEnvelope } from "react-icons/fa"
 
 function Footer() {
   return ( 
-        <div className="container">
+        <div className="container ">
   <footer>
     <div>
     <img className="footlogo"src={logo}/>
     </div>
-
-    <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li><i className="fa-brands fa-facebook"></i></li>
-      <li><i className="fa-brands fa-twitter"></i></li>
-      <li>BsInstagram</i></li>
-      <li><i className="fa-brands fa-youtube"></i></li>
-      <li><i className="fa-thin fa-envelope"></i></li>
+    <ul className="justify-content-end list-unstyled d-flex">
+      <li><GrFacebook className="light"/></li>
+      <li><IoLogoTwitter className="light"/></li>
+      <li><BsInstagram className="light"/></li>
+      <li><IoLogoYoutube className="light" /></li>
+      <li><FaEnvelope className="light"/></li> 
     </ul>
   </footer>
 </div>

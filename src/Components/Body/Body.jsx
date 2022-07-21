@@ -15,9 +15,9 @@ import Products from "../Products/Products"
   
   
 
-(<CarouselCard  cart={cart} cartAdd={cartAdd}>
+<CarouselCard  cart={cart} cartAdd={cartAdd}>
 
-    </CarouselCard>);
+    </CarouselCard>;
  
   
   </div>
