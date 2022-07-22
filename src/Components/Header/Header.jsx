@@ -2,6 +2,7 @@ import logo from "../../img/logo.webp";
 import "./Header.css";
 import CardModal from "../CardModal/CardModal";
 import { Link } from "react-router-dom";
+import hand from "../../img/SntCruzLogo.png"
 
 const Header = (props) => {
   const { cart, user, setUser } = { ...props };
@@ -12,40 +13,45 @@ const Header = (props) => {
 
   return (
     <>
-      <div className="wrapper">
-        <ul className="nav justify-content-between">
-          <li className="nav-item">
-            <Link to="/">
-              <img className="logotype" src={logo} />
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
+      <nav className="wrapper d-flex ">
+      <div className='logos'>
+        <Link to="/">
+                <img className="logotype2 d-inline-block align-top" src={hand} />
+                <img className="logotype d-inline-block align-top" src={logo} />
+              </Link>
+      </div>
+        <ul className="links d-flex">          
+          <li className="bikesLi">
+            <Link className="bikes" to="/">
               Bikes
             </Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/riders">
+          <li className="ridersLi">
+            <Link className="riders" to="/riders">
               Riders
             </Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/shops">
+          <li className="shopsLi">
+            <Link className="shops" to="/shops">
               Shops
             </Link>
           </li>
-          <li className="nav-item">
-            <CardModal />
-          </li>
-          <li className="nav-item">
+          <li className="">
             <Link to="/login">
-              <button className="nav-link btn btn-dark " onClick={logout}>
+              <button className=" logout btn btn-dark " onClick={logout}>
                 Log out
               </button>
             </Link>
+            </li>
+          <li className="">
+            <div className="cart">
+            <CardModal />
+            </div>
           </li>
+          
+          
         </ul>
-      </div>
+      </nav>
     </>
   );
 };

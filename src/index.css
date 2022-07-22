@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: myFirstFont;
+  src: url(../public/Fonts/Santa-Cruz-Font/santacalra_black.ttf)
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(../public/Fonts/Santa-Cruz-Font/santacarla.ttf)
+}

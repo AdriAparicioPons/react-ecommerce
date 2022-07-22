@@ -1,0 +1,12 @@
+.bill, .lewis, .marinelli, .macaskill, .wibmer, .garay{
+    position: absolute;
+    bottom: 5px;
+    left: 3rem;
+    font-size: 30px;
+    font-family: mySecondFont;
+   
+
+}
+.wrapp{
+    position: relative;
+}

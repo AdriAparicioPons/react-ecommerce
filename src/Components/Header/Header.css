@@ -1,9 +1,35 @@
 .logotype{
-    width: 30%;
+    width: 80%;
 }
-.nav{
-    padding : 1rem;
+.logotype2{
+    width: 15%;
+}
+.logos{
+    width:33%;
+    margin-right: 30rem;
+}
+.links{
+    padding : 0rem;
+    color : white;
+    font-family: myFirstFont;
+    margin-right: 2rem;
+    list-style: none;
+    
 }
 .wrapper{
     background-color: black;
+}
+
+.bikes, .riders, .shops, .logout, .cart{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white;
+    margin-top: 1.65rem;
+    
+
+}
+
+.bikesLi, .shopsLi, .ridersLi {
+    margin-top: 2rem;
+
 }
